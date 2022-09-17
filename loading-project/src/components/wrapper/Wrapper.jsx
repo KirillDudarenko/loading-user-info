@@ -12,7 +12,7 @@ const Wrapper = () => {
         setTimeout(() => setIsLoading(false), delay * 1000)
     }, [])
     return (
-        <div className='wrapper'>
+        <div>
             <span>{TEXT}</span>
             <LoadingCard loading={loading} />
         </div>

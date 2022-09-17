@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.wrapper {
-    height: 2500px;
-}
 
 .loading-card {
     @apply fixed top-[55%] w-96 rounded-lg left-2/4 translate-x-[-50%] bg-white;
