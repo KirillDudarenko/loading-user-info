@@ -23,7 +23,6 @@ const LoadingCard = (props) => {
             localStorage.setItem('notes', JSON.stringify(notes));
         }
         const index = getRandom(0, notes.length - 1);
-        console.log(notes);
         setCurrentNote(notes[index]);
         notes.splice(index, 1);
         localStorage.setItem('notes', JSON.stringify(notes));
