@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { getRandom } from '../../common';
 import { CARD_NOTES, NOTE_DELAY } from '../../constants';
 import { Spinner, Minus, Plus } from '../icons';
 
@@ -21,8 +22,10 @@ const LoadingCard = (props) => {
             notes = [...CARD_NOTES]
             localStorage.setItem('notes', JSON.stringify(notes));
         }
-        setCurrentNote(notes[notes.length - 1]);
-        notes.splice(notes.length - 1, 1);
+        const index = getRandom(0, notes.length - 1);
+        console.log(notes);
+        setCurrentNote(notes[index]);
+        notes.splice(index, 1);
         localStorage.setItem('notes', JSON.stringify(notes));
     }
     useEffect (() => {
