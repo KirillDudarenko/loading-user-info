@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper {
+    height: 2500px;
+}
+
+.loading-card {
+    @apply fixed top-[55%] w-96 rounded-lg left-2/4 translate-x-[-50%] bg-white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading-card-header {
+    @apply py-6 mx-6 flex border-b border-blue-231;
+}
+
+.loading-card-header-text {
+    @apply text-green-700 block pl-3 font-medium text-xl font-sans leading-6;
+}
+
+.spinner {
+    @apply animate-spin h-6 w-6;
+}
+
+.loading-card-body {
+    @apply p-6 pt-5;
+}
+
+.expander {
+    @apply h-3.5 border rounded border-grey-217 w-3.5 flex items-center justify-center;
+}
+
+.expander-icon {
+    @apply w-2 text-slate-690;
+}
+
+.question-text {
+    @apply text-base font-sans leading-6 ml-2 block;
+}
+
+.info-text {
+    @apply text-grey-133 font-sans text-base mt-1;
+}
